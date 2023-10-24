@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function me(phonenumber){
+    console.log("I am Working Please leave your message I will callback you later")// my auto message call
+    
+    phonenumber()//callback him by his phonenumber
+}
+
+function phonenumber(){// here my friend/unkown
+console.log("Hello Bhai")    
+}
+
+me(phonenumber) // my friend/unkown has called me he/she(my friend/unknown) should has his own phone number to call me or other
+//    so here we has a catch that phone number is nothing but our callback
+
+//  becouse we need a phonenumber to call someone,so when we need to callback my friend/unkown i need his/her phonenumber so here phonenumber is just a reference to call that person 
+    
+    // becouse In JavaScript, functions are first-class objects, because they can be passed to other functions, returned from functions, and assigned to variables and properties. They can also have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called.
+
+// so here we have problem/situation that if a some unkown person/my freind has called me and if i am busy at that time i will not take his/her call 
+// then i will call him later when my work has finished 
+
+// so to call a person which has called me i need this following requirement
+// 1) I need his/her phone number
+// 2) phone should have a calling feature
+
+// so we  if look at our smart phones they all have these features/requirement
+// 1) every smart has phone history from which we can find who has call to me
+// 2) every phone which has sim and has recharged have calling feature (even we can call by wifi)
+
+// so again we summerize our solution so call an automatic messager call be as 
+// auto message call
+// 1) if a person has called me a auto message call speaks:"I am Working Please leave your message I will callback you later
+// 2) my phone history has log the person's phone number in phone history 
+// 3) now my work has finished i see phone history  in this i findout some has called me
+// 4) now i callback him as i know his phone number because his phone number has loged in phone history
+// 5) this is a callback this is nothing but calling some other function when 
+// when my task/work has finished 
+// in our situation callback is phone number of a person that has 
+// called me so when my work has finished i callback him
+
+// callback  main defination is :
+// when a function is passed as a argument in other function and that passed function is khown as callback
+// why it is called callback becouse it can be called back in a function
+// ex: x(y) y : y is callback function it can be callback
+// when x is called function x(){
+// y()// callback to y }
+
+// use case it is used for asynchronuse tasks
+    </script>
+</body>
+</html>
